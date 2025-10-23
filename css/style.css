@@ -270,11 +270,60 @@ ul.listabotones li .otrosbotones:hover {
 
 .accesosrapidos a:hover { text-decoration: underline; }
 
+.navbar-toggler-icon {
+    color: #111111;
+    background-color: black;
+}
+
+
+
+/*.containermejoresfrutas {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mejoresfrutasimg {
+    background-color: white;
+    padding: 20px;
+}
+.mejoresfrutasimg img {
+    margin: 0px;
+}
+
+.container2mejoresfrutas {
+    
+    text-align: center;
+}
+
+.containermejoresfrutas {
+    display: block;
+}
+
+.linkmejoresfrutas {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}*/
+
+
+
+
 /*** Media Queries ***/
 
 /* Smartphones */
-@media (max-width: 576px) {
+@media (max-width: 390px) {
     .navbar-brand { font-size: 1.3rem; }
+    .carousel { background-color: #111111;}
+    .containerheader {
+    
+    position: relative;
+    right: 25%;
+}
+
+
+
     .carousel-caption { bottom: 20%; left: 50%; transform: translateX(-50%); text-align: center; }
     .carousel-caption h5 { font-size: 1.5rem; margin-bottom: 1rem; }
     .carousel-caption .badgeverde,
@@ -289,7 +338,8 @@ ul.listabotones li .otrosbotones:hover {
     ul.listabotones { flex-direction: column; align-items: center; }
     ul.listabotones li { width: 100%; }
 
-    .tarjetas { flex-direction: column; align-items: center; }
+    .tarjetas { display: flex; justify-content: center; }
+    .div-targeta { display: flex; justify-content: center; width: 90%;}
     .shadow { width: 90%; max-width: none; }
 
     .nuestrasfincas { flex-direction: column; text-align: center; gap: 20px; }
@@ -300,7 +350,7 @@ ul.listabotones li .otrosbotones:hover {
 
 /* Tablets */
 @media (max-width: 768px) {
-    .carousel-item { height: 350px; }
+    .carousel-item { height: auto;}
     .carousel-caption h5 { font-size: 1.75rem; }
 }
 
