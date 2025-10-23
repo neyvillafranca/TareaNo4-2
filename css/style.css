@@ -1,0 +1,310 @@
+/********** Template CSS Responsivo Completo **********/
+
+:root {
+    --primary: #3CB815;
+    --secondary: #F65005;
+    --light: #F7F8FC;
+    --dark: #111111;
+}
+
+/*** Navbar ***/
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 15px;
+}
+
+/*** Section Header ***/
+.section-header {
+    position: relative;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.section-header::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+}
+
+.section-header::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 2px;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary);
+}
+
+.section-header.text-start::before,
+.section-header.text-start::after {
+    left: 0;
+    transform: translateX(0);
+}
+
+/*** Carousel ***/
+.carousel-caption {
+    bottom: 45%;
+    left: 15%;
+    text-align: left;
+}
+
+.carousel-caption h5 {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+    margin-bottom: 30px;
+}
+
+.carousel-caption .badgeverde,
+.carousel-caption .badgenaranja {
+    color: white;
+    border-radius: 35px;
+    width: auto;
+    height: 45px;
+    display: inline-block;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 5px;
+    padding: 0 15px;
+}
+
+.carousel-caption .badgeverde { background-color: var(--primary); }
+.carousel-caption .badgenaranja { background-color: var(--secondary); }
+
+/*** Mejores Frutas ***/
+.principalcontainer { display: flex; justify-content: center; }
+
+.containermejoresfrutas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    padding: 15px;
+    margin: 80px 0;
+}
+
+.mejoresfrutasimg img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+.container2mejoresfrutas h1 { font-size: clamp(1.5rem, 4vw, 3rem); }
+.linkmejoresfrutas {
+    display: inline-block;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 35px;
+    padding: 15px 35px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+/*** Características ***/
+.containerprincipalcaracteriza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 50px;
+}
+
+.containercaracteristicas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.containercaracteristica {
+    background-color: #fff6f5;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+}
+
+.linkcaracteristica {
+    border: 2px solid var(--primary);
+    border-radius: 20px;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--primary);
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*** Productos ***/
+.sectioncontainer { display: flex; flex-wrap: wrap; gap: 40px; padding: 30px 0; }
+.section-header-productos { padding-left: 130px; }
+
+.contenedorbotones {
+    margin-left: 360px;
+    margin-top: 75px;
+}
+
+ul.listabotones {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.listabotones li .otrosbotones {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid var(--primary);
+    color: black;
+    text-decoration: none;
+}
+
+ul.listabotones li .otrosbotones:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.shadow {
+    box-shadow: 10px 5px 5px black;
+    border: 1px solid #cdcdcd;
+    margin-bottom: 30px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px; /* limita tamaño máximo */
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.detalles {
+    display: flex;
+    justify-content: center;
+}
+
+.detalles small {
+    border: 1px solid #cdcdcd;
+    width: 50%;
+    text-align: center;
+}
+
+.precio {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.nombre { color: var(--dark); }
+.valor { color: var(--primary); }
+
+/*** Fincas ***/
+.nuestrasfincas {
+    background-color: var(--primary);
+    color: white;
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ingresarnuestrasfincas {
+    background-color: var(--secondary);
+    width: 140px;
+    height: 50px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ingresarnuestrasfincas a {
+    color: white;
+    text-decoration: none;
+}
+
+/*** Footer ***/
+.containerfooter {
+    background-color: var(--dark);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.containerfooter>div { flex: 1; min-width: 250px; }
+
+.containerfooter h4 { color: white; margin-bottom: 10px; }
+.containerfooter p { color: #6f6f6f; }
+
+.accesosrapidos a {
+    display: block;
+    color: #6f6f6f;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.accesosrapidos a:hover { text-decoration: underline; }
+
+/*** Media Queries ***/
+
+/* Smartphones */
+@media (max-width: 576px) {
+    .navbar-brand { font-size: 1.3rem; }
+    .carousel-caption { bottom: 20%; left: 50%; transform: translateX(-50%); text-align: center; }
+    .carousel-caption h5 { font-size: 1.5rem; margin-bottom: 1rem; }
+    .carousel-caption .badgeverde,
+    .carousel-caption .badgenaranja { padding: 5px 10px; font-size: 0.75rem; height: auto; line-height: normal; }
+
+    .containermejoresfrutas { flex-direction: column; align-items: center; gap: 20px; }
+    .mejoresfrutasimg img { margin-right: 0; width: 200px; height: 200px; }
+
+    .containercaracteristicas { flex-direction: column; align-items: center; gap: 20px; }
+
+    .section-header-productos, .contenedorbotones { margin-left: 0; text-align: center; }
+    ul.listabotones { flex-direction: column; align-items: center; }
+    ul.listabotones li { width: 100%; }
+
+    .tarjetas { flex-direction: column; align-items: center; }
+    .shadow { width: 90%; max-width: none; }
+
+    .nuestrasfincas { flex-direction: column; text-align: center; gap: 20px; }
+    .ingresarnuestrasfincas { margin-right: 0; }
+
+    .containerfooter { flex-direction: column; align-items: center; text-align: center; gap: 20px; }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .carousel-item { height: 350px; }
+    .carousel-caption h5 { font-size: 1.75rem; }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1400px) {
+    .carousel-caption h5 { font-size: 4rem; }
+}
